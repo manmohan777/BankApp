@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Bank App</string>
+    <string name="email_id">Email id</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or_sign_up">New User? <u>Sign-up</u></string>
+    <string name="account_number">Account Number</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="admin_page">Admin Page</string>
+    <string name="enter_new_rate">Enter New Rate</string>
+    <string name="new_rate">New Rate</string>
+    <string name="account_no">Account No.</string>
+    <string name="add_money">Add Money</string>
+    <string name="deduct_money">Deduct Money</string>
+    <string name="amount_to_a_d">Amount to Add/Deduct</string>
+    <string name="enter_account_number">Enter Account Number</string>
+    <string name="update_bsr_conversion_rate">Update BSR Conversion Rate</string>
+    <string name="update_user_account_balance">Update User Account Balance</string>
+    <string name="update_rate">Update Rate</string>
+    <string name="send_money">Send Money</string>
+    <string name="insurance_subscription">Insurance Subscription</string>
+    <string name="insurance_application">Insurance Application</string>
+    <string name="loan_application">Loan Application</string>
+    <string name="bank_application">Bank Application</string>
+    <string name="logout">LogOut</string>
+    <string name="home">Home</string>
+    <string name="amount">Amount</string>
+    <string name="name">Name</string>
+    <string name="bsr_balance">BSR Balance :</string>
+    <string name="balance">Balance : $1000</string>
+    <string name="no_transactions">No Transactions</string>
+    <string name="enter_insurance_amount">Enter Insurance Amount(BSR)</string>
+    <string name="type">Type</string>
+    <string name="apply">Apply</string>
+    <string name="your_recent_loan_applications">Your Recent Loan Applications</string>
+    <string name="your_loan_applications">Your Loan Applications</string>
+    <string name="your_recent_insurance_applications">Your Recent Insurance Applications</string>
+    <string name="your_insurance_applications">Your Insurance Applications</string>
+    <string name="new_insurance_application">New Insurance Application</string>
+    <string name="new_loan_application">New Loan Application</string>
+    <string name="no_loan_history">No Loan History</string>
+    <string name="enter_loan_amount">Enter Loan Amount</string>
+    <string name="enter_nominee_name">Enter Nominee Name</string>
+    <string name="no_insurance_history">No Insurance History</string>
+    <string name="enter_loan_period">Enter Loan Period(Months)</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="enter_receiver_account_no">Enter Receiver Account No.</string>
+    <string name="send">Send</string>
+    <string name="enter_amount_to_be_sent">Enter Amount to be Sent</string>
+    <string name="bsr_logo">BSR Logo</string>
+    <string name="bsr_banking_application">BSR Banking Application</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="cancel">Cancel</string>
+    <string name="approve">Approve</string>
+    <string name="notifications">Notifications</string>
+    <string name="inquiries">Inquiries</string>
+    <string name="sample_text">Sample Text</string>
+    <string name="new_txt">New</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="ref">Ref:</string>
+    <string name="insurance_application_rejected">Your insurance application have been rejected.</string>
+    <string name="insurance_application_approved">Your insurance application have been approved</string>
+    <string name="insurance_application_commission">You got a commission from an approved insurance application</string>
+    <string name="loan_application_rejected">Your loan application have been rejected.</string>
+    <string name="loan_application_approved">Your loan application have been approved</string>
+    <string name="loan_application_commission">You got a commission from an approved loan application</string>
+    <string name="new_message">You have new message</string>
+    <string name="new_money_reception">You received money in your account</string>
+    <string name="new_money_deduction">Money have been deduced from your account</string>
+    <string name="info">Info</string>
+    <string name="insurance_inquiry_request">Inquiry request for Insurance n°:\n%s.</string>
+    <string name="loan_inquiry_request">Inquiry request for Loan n°:\n%s.</string>
+
+    <string-array name="currency">
+        <item>USD</item>
+        <item>INR</item>
+        <item>JPY</item>
+        <item>GBP</item>
+        <item>AED</item>
+        <item>AUD</item>
+    </string-array>
+
+    <string-array name="insurance_type">
+        <item>Term Insurance</item>
+        <item>Medical Insurance</item>
+        <item>Mobile Insurance</item>
+        <item>Vehicle Insurance</item>
+        <item>Life Insurance</item>
+    </string-array>
+
+    <string-array name="loan_type">
+        <item>Vehicle Loan</item>
+        <item>Things Loan</item>
+        <item>Property Loan</item>
+        <item>Gold Loan</item>
+    </string-array>
+</resources>

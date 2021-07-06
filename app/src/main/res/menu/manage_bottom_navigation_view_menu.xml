@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/agentHome"
+        android:icon="@drawable/ic_home"
+        android:iconTint="@color/button"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/managerInsurance"
+        android:icon="@mipmap/insurance_icon"
+        android:iconTint="@color/button"
+        android:title="@string/insurance_subscription" />
+
+    <item
+        android:id="@+id/managerTransactionHistory"
+        android:icon="@mipmap/send_money"
+        android:iconTint="@color/button"
+        android:title="@string/transaction_history" />
+
+    <item
+        android:icon="@drawable/ic_loan"
+        android:id="@+id/managerLoan"
+        android:iconTint="@color/button"
+        android:title="@string/loan_application" />
+
+</menu>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/infoIcon"
+            android:src="@drawable/ic_baseline_info_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/sample_text"
+            android:layout_toEndOf="@+id/infoIcon"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/badgeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_background"
+            android:textColor="@color/white"
+            android:text="@string/new_txt"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/refLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeTxt"
+            android:text="@string/ref"
+            android:layout_toEndOf="@+id/infoIcon"
+            android:textSize="15sp"
+            android:paddingEnd="5dp"/>
+
+
+        <TextView
+            android:id="@+id/refTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeTxt"
+            android:text="@string/sample_text"
+            android:layout_toEndOf="@+id/refLabel"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/contentTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/refTxt"
+            android:text="@string/sample_text"
+            android:layout_toEndOf="@+id/infoIcon"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

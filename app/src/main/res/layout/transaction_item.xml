@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/sentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sent date"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/transactionId"
+            android:layout_below="@id/sentDate"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Id"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/toAccName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transactionId"
+            android:text="To Account Name"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/toAccNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toAccName"
+            android:text="To Account number"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/sentAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toAccNo"
+            android:layout_marginTop="10dp"
+            android:text="amount sent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/sentOrReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toAccNo"
+            android:layout_alignParentEnd="true"
+            android:text="sent or received"
+            android:layout_marginTop="10dp"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

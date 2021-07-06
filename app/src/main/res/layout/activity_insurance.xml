@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.InsuranceActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_color"
+        android:elevation="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Insurance Application">
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logout"
+            android:padding="10dp"
+            android:src="@drawable/ic_logout" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <TextView
+        android:id="@+id/recentInsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/your_recent_insurance_applications"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/noInsuranceHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="@string/no_insurance_history"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recentInsTitle" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/svRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recentInsTitle">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/newInsuranceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="@string/new_insurance_application"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recentInsTitle" />
+
+    <EditText
+        android:id="@+id/etInsuranceAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="@string/enter_insurance_amount"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newInsuranceTitle" />
+
+    <EditText
+        android:id="@+id/etNominee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/enter_nominee_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/insuranceTypeSpinner"
+        app:layout_constraintStart_toStartOf="@+id/insuranceTypeSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/insuranceTypeSpinner" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/insuranceTypeSpinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etInsuranceAmt"
+        android:layout_alignStart="@+id/etInsuranceAmt"
+        android:layout_alignEnd="@+id/etInsuranceAmt"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/etInsuranceAmt"
+        app:layout_constraintStart_toStartOf="@+id/etInsuranceAmt"
+        app:layout_constraintTop_toBottomOf="@+id/etInsuranceAmt" />
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/agentSpinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etInsuranceAmt"
+        android:layout_alignStart="@+id/etInsuranceAmt"
+        android:layout_alignEnd="@+id/etInsuranceAmt"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etNominee"
+        app:layout_constraintEnd_toEndOf="@+id/etNominee"
+        app:layout_constraintTop_toBottomOf="@+id/etNominee" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@color/button"
+        app:itemTextColor="@color/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_view_menu"
+        app:layout_constraintTop_toBottomOf="@+id/btnApply"/>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/apply"
+        app:layout_constraintEnd_toEndOf="@+id/agentSpinner"
+        app:layout_constraintStart_toStartOf="@+id/agentSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/agentSpinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

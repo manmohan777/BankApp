@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "721583005875",
+    "project_id": "bsrcoin-5005f",
+    "storage_bucket": "bsrcoin-5005f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721583005875:android:728553fbb630d16fe9d0c6",
+        "android_client_info": {
+          "package_name": "com.example.bankapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721583005875-cqafdmq9gr02d67as2vsik5lmac0oirb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bankapp",
+            "certificate_hash": "5d24fba81951729d36379485ac9e4e06dd5ec8b7"
+          }
+        },
+        {
+          "client_id": "721583005875-oogab7r8auoejmoleit473303cjku3p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5juGTsCDyOyzOCBhU-B6-4RjxdkfnWtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721583005875-oogab7r8auoejmoleit473303cjku3p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

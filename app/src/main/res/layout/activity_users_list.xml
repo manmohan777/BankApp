@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UsersListActivity">
+
+
+        <TextView
+            android:id="@+id/headTV"
+            android:layout_width="wrap_content"
+            android:text="Agents List"
+            android:textSize="15dp"
+            android:elevation="10dp"
+           android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/default_color"
+        android:layout_height="100dp"/>
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headTV"
+        android:layout_marginTop="10dp"
+        android:id="@+id/agentListRV"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
